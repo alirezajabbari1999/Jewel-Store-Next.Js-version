@@ -1,0 +1,50 @@
+.registerForm {
+  border: 1.8px solid #eeeeee;
+  margin: 5rem auto;
+  /* padding: 2rem; */
+  border-radius: 1.5rem;
+  overflow: hidden;
+  width: 40rem;
+}
+
+.formType {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.typeRegister {
+  text-align: center;
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 1.5rem 0 1.5rem 0;
+  cursor: pointer;
+  background-color: #eeeeee;
+  color: #999999;
+}
+
+.typeLogin {
+  text-align: center;
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 0 1.5rem 0 1.5rem;
+  cursor: pointer;
+  background-color: #eeeeee;
+  color: #999999;
+}
+
+.typeLogin.active,
+.typeRegister.active {
+  background-color: #fff;
+  color: #000;
+}
+
+.imageBox {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.image {
+  width: 10rem;
+  height: 5rem;
+}

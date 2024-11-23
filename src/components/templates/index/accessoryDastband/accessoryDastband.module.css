@@ -1,0 +1,16 @@
+.accessoryGardanbandContainer{
+  border: 1px solid #9999995a;
+  border-radius: 2.1rem;
+  padding: 2rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.title{
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #000000a7;
+}
+
+.accessoryGardanbandSlider{
+  padding-top: 1rem;
+}

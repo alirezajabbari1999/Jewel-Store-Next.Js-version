@@ -1,0 +1,93 @@
+.porbazdidContainer {
+  background: linear-gradient(to bottom, #aa9f8b, #7b7b7a);
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.porbazdidContainerRow {
+  gap: 3rem;
+  align-items: center;
+}
+
+.rightSide {
+}
+
+.titleBox{
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+}
+
+.icon{
+  font-size: 2.3rem;
+}
+
+.title{
+  color: var(--white);
+  margin-bottom: 0;
+}
+
+.leftSide {
+  max-height: 100%;
+}
+
+.sliderBox {
+  border: 1px solid red;
+  border-radius: 2rem;
+  width: 100%;
+  padding: 1rem 2.5rem 4rem;
+}
+
+.sliderBoxTitle {
+  color: var(--white);
+  font-weight: 500;
+  border-bottom: 1px solid var(--white);
+  padding: 1rem 0;
+  margin-bottom: 3rem;
+}
+
+.top {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.imageBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  
+}
+
+.imageBox::before {
+  content: "";
+  position: absolute;
+  background-color: #cdab7d;
+  width: 21rem;
+  height: 10rem;
+  border-radius: 1.5rem;
+  z-index: -20;
+}
+
+.image {
+  max-width: 11rem;
+  max-height: 11rem;
+  z-index: 999;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--white);
+  font-size: 1.4rem;
+}
+
+
+@media (max-width: 990px) {
+  /* .imageBox::before{
+    border-radius: 1.5rem !important;
+    overflow: hidden !important;
+  } */
+}

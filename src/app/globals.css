@@ -1,33 +1,46 @@
+@font-face {
+  font-family: shabnam;
+  src: url("/fonts/shabnam/ShabnamLightFD.ttf");
+}
+
+@font-face {
+  font-family: shabnam;
+  src: url("/fonts/shabnam/Shabnam-Medium.woff");
+}
+
+@font-face {
+  font-family: shabnam-Bold;
+  src: url("/fonts/shabnam/Shabnam-Bold.woff");
+}
+
+html {
+  font-size: 62.5%;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --main-color: #cba583;
+  --dark: #111;
+  --white: #fff;
+  --light-gray: #eceff7;
 }
 
 * {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+}
+
+body {
+  font-family: shabnam, Arial, Helvetica, sans-serif !important;
+  min-height: 100vh;
+  line-height: 1.6;
+  font-size: 1.6rem !important;
+  direction: rtl;
+}
+
+ul {
+  list-style-type: none;
 }
 
 a {
@@ -35,8 +48,77 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+p{
+  margin: 0 !important;
+}
+
+
+
+/* استایل‌های دکمه‌های ناوبری اسلایدر */
+
+.swiper-pagination-bullet {
+  background-color: #000000;
+}
+
+.swiper-pagination-bullet-active {
+  width: 20px !important;
+  border-radius: 0.4rem !important;
+  background-color: var(--main-color) !important;
+}
+
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+  color: var(--main-color);
+  background-color: white; 
+  width: 3rem; 
+  height: 3rem; 
+  border-radius: 50%; 
+  border: 1px solid var(--main-color); 
+}
+
+.mySwiper .swiper-button-prev::after,
+.mySwiper .swiper-button-next::after {
+  font-size: 16px; 
+}
+
+
+
+@media (max-width: 991px) {
+  .container-custom {
+    max-width: 100% !important;
+    padding: 0 2rem !important;
   }
+}
+
+
+/* این کلاس مربوط به تیره شدن صفحه پس از کلیک بر روی یکسری
+از المان ها میباشد */
+.overly{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: none; 
+  z-index: 999;
+}
+
+.overly.active {
+  display: block;
+}
+
+
+
+.gallery-slider-2 {
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.gallery-slider-2 .swiper-slide {
+  opacity: 0.4;
+}
+
+.gallery-slider-2 .swiper-slide-thumb-active {
+  opacity: 1;
 }

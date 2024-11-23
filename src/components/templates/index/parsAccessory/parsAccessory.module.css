@@ -1,0 +1,26 @@
+.parsAccessoryContainer{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.boxesContainer{
+
+}
+
+.title{
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.boxesContainer{
+
+}
+
+.linkBox{
+  color: var(--dark);
+}
+
+.row{
+  justify-content: center;
+  /* gap: 2rem; */
+}

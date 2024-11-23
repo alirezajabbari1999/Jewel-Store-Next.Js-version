@@ -1,0 +1,124 @@
+.miniNavbar {
+  display: none;
+}
+
+.miniNavbarFirstRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0 2rem;
+}
+
+.sidebarIconBox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon {
+  font-size: 3rem;
+  color: #00000090;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1.6rem;
+  color: #999999bc;
+  font-weight: 700;
+  display: block;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.logo {
+  width: 10rem;
+  height: 5rem;
+}
+
+.miniNavbarSecondRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.searchBox {
+  flex-grow: 3;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #99999958;
+  padding: 0.6rem;
+  border-radius: 1.2rem;
+}
+
+.searchIcon {
+  cursor: pointer;
+  font-size: 2.6rem;
+}
+
+.searchInput {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.searchInput::placeholder {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #99999958;
+}
+
+.panelBox {
+  /* flex-grow: 1; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.userIcon {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.shoppingCard {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.shoppingCardIcon {
+  font-size: 2.5rem;
+  cursor: pointer;
+
+}
+
+.shoppingCount {
+  background-color: var(--main-color);
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+
+@media screen and (max-width: 991px) {
+  .miniNavbar {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .logo {
+    width: 7rem;
+    height: 3rem;
+  }
+}

@@ -1,0 +1,13 @@
+.breadCrumb{
+  color: #81858b;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1rem 0 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+}
+
+.link{
+  color: #999;
+}

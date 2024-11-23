@@ -1,0 +1,78 @@
+.handAartContainer {
+  margin: 10rem 0 1rem;
+}
+
+.HandArtRow {
+  background-color: var(--main-color);
+  border-radius: 0.5rem 6rem 0.5rem 0.5rem;
+  margin-top: 2rem;
+}
+
+.handArtTitleBox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.handArtTitleBox h3 {
+  font-weight: 600;
+}
+
+.medalIcon {
+  color: #f8c64b;
+  font-size: 2rem;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 3rem;
+}
+
+.desc {
+  color: var(--white);
+  line-height: 2.8rem;
+  font-size: 1.3rem;
+}
+
+.handArtLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.linkTitle {
+  color: var(--white);
+  font-size: 1.7rem;
+  display: inline-block;
+}
+
+.linkIconBox {
+  background-color: var(--main-color);
+  padding: 0 1rem;
+  border-radius: 1rem;
+}
+
+.linkIcon {
+  color: #ffffffba;
+}
+
+.slider {
+  position: relative;
+  top: -13%;
+  left: 0;
+  margin-left: 4rem;
+}
+
+@media (max-width: 990px) {
+  .handArtTitleBox,
+  .right {
+    display: none;
+  }
+
+  .left{
+    padding-right: 5rem;
+  }
+}

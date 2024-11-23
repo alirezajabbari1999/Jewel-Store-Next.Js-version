@@ -1,0 +1,24 @@
+.bigSlider{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sliderBigImage{
+  width: 80%;
+  height: 80%;
+}
+
+.smallSlider{
+  margin-top: 1.5rem;
+
+}
+
+.sliderSmallImage{
+  width: 80%;
+  height: 80%;
+  border-radius: .8rem;
+  border: 1px solid #999;
+  padding: .5rem;
+}

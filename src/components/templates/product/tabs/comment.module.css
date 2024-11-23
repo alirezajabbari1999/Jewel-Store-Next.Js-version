@@ -1,0 +1,59 @@
+.avatar {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+}
+.stars {
+  display: flex;
+  gap: 4px;
+  color: orange;
+  margin-right: 1rem;
+}
+.userInfo {
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+  gap: 1rem;
+}
+.comment {
+  font-family: shabnam;
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.218);
+  margin-top: 1rem;
+  gap: 25px;
+  align-items: center;
+  padding-bottom: 25px;
+}
+.main_details {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.comment p {
+  margin-bottom: 2px;
+  margin-top: 10px !important;
+}
+
+.reply {
+  border: 1.6px dashed #9999;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  margin-top: 1.5rem;
+  margin-right: 2rem;
+  background-color: #e1e1e138;
+}
+
+.replyHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+
+.replyRole {
+  font-weight: 600;
+}
+
+.replyBody{
+  font-size: 1.35rem;
+}

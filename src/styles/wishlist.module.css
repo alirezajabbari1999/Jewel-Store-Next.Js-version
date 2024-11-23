@@ -1,0 +1,36 @@
+.wishlist{
+  text-align: center;
+}
+
+.title{
+  margin-bottom: 4rem !important;
+}
+
+.messageBox{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.loginMessage{
+
+}
+
+.noWishlistMessage{
+  background-color: var(--main-color);
+  display: inline-block;
+  color: #fff;
+  padding: 1rem 2.5rem;
+  border-radius: 1rem;
+ text-align: center;
+}
+
+.loginBtn{
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  width: 15rem;
+  padding: .3rem 2.5rem;
+  border-radius: 1rem;
+}

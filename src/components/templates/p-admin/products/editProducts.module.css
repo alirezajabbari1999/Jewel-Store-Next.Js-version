@@ -1,0 +1,65 @@
+.editProducts{
+  background-color: #fff;
+  width: 40rem;
+  position: fixed;
+  top: 50%; /* مرکز قرار دادن عمودی */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  z-index: 1000;
+  border: 3px solid #711d1c;
+  font-size: 1.5rem;
+}
+
+.imageBox{
+  text-align: center;
+}
+
+.image{
+  border: 1.2px solid #711d1c;
+  border-radius: .5rem;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input{
+  border: 1px solid;
+  outline: none;
+  padding: .5rem .3rem;
+  border-radius: .5rem;
+  width: 70%;
+}
+
+.btnBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.closeBtn{
+  background-color: red;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: .4rem 1.3rem;
+  border-radius: .7rem;
+  font-size: 1.4rem;
+}
+.submitBtn{
+  background-color: green;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: .4rem 1.3rem;
+  border-radius: .7rem;
+  font-size: 1.4rem;
+}

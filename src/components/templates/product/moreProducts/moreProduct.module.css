@@ -1,0 +1,39 @@
+.handArtSliderPart {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.hand-art-link {
+  color: #000;
+}
+
+.link {
+  color: inherit;
+}
+
+.imageBox {
+  padding-bottom: 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  max-width: 10rem;
+  max-height: 10rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 4rem;
+}
+
+.price {
+  font-size: 1.3rem;
+  text-align: left;
+}

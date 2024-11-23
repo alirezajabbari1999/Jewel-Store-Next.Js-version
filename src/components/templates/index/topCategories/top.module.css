@@ -1,0 +1,15 @@
+.topCategories{
+  padding-top: 3rem;
+}
+
+.title{
+ font-size: 1.6rem;
+ color: #232933e6;
+ font-weight: 600;
+ padding-bottom: 2rem;
+}
+
+.sliderImg{
+  width: 80%;
+  height: 80%;
+}

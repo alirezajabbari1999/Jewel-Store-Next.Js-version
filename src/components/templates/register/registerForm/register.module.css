@@ -1,0 +1,77 @@
+.loginForm {
+  background-color: var(--white);
+  max-width: 40rem;
+  border-radius: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem 5rem;
+}
+
+.formRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.label {
+  color: #4d4d4d;
+  font-size: 1.2rem;
+}
+
+.input {
+  border: none;
+  outline: none;
+  color: #666;
+}
+
+.input::placeholder {
+  font-size: 1.4rem;
+}
+
+.inputBox {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.showIcon {
+  cursor: pointer;
+}
+
+.submitBtn {
+  background-color: var(--main-color);
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+}
+
+.openOtpForm {
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: inherit;
+  outline: none;
+  border: 2px solid var(--main-color);
+  padding: 0.5rem;
+  color: #000000a5;
+  font-size: 1.4rem;
+}
+
+.checkboxRow {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.checkboxRow label {
+  font-size: 1.4rem;
+}

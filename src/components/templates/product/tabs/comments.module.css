@@ -1,0 +1,19 @@
+/* در حالت پیش‌فرض */
+.commentsCol {
+  order: 2;
+}
+
+.formCol {
+  order: 1;
+}
+
+/* در حالت نمایش دسکتاپ */
+@media (min-width: 992px) {
+  .commentsCol {
+    order: 1;
+  }
+
+  .formCol {
+    order: 2;
+  }
+}

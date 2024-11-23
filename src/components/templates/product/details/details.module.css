@@ -1,0 +1,60 @@
+.titleSide {
+  width: 60%;
+}
+
+.title {
+  font-weight: bold;
+  border-bottom: 1px solid #55555535;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+.rateBox {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.rate {
+  background-color: #9f9f9f;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+  border-radius: 0.3rem;
+  padding: 0.1rem 0.5rem;
+  font-size: 1.3rem;
+}
+
+.starIcon {
+  font-size: 1.2rem;
+}
+
+.rateText {
+  font-size: 1.3rem;
+  color: #999;
+}
+
+.wishListBox {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.heartIcon {
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.heartIconActive {
+  color: red;
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 991px) {
+  .wishListBox {
+    margin-bottom: 2rem;
+  }
+}

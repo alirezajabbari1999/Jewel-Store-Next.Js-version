@@ -1,0 +1,19 @@
+.container{
+  padding: 0;
+}
+
+.moreProducts{
+  border: 1px solid #55555535;
+  border-radius: 1.1rem;
+  padding: 1.5rem 3rem;
+}
+
+.title{
+  display: inline-block;
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+  margin-bottom:2.5rem;
+  border-bottom: 2.5px solid var(--main-color);
+  width: 8.5rem;
+}
+

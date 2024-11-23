@@ -1,0 +1,40 @@
+.parsAccessoryPartContainer {
+  display: flex;
+  align-items: center;
+  border: 1px solid #9999995a;
+  border-radius: 2.1rem;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+  margin: 0.7rem 0;
+}
+
+.parsAccessoryPartContainer:hover {
+  background-color: var(--main-color);
+}
+
+.parsAccessoryPartContainer:hover .title {
+  color: var(--white);
+}
+
+.imageBox {
+  width: 11rem;
+  height: 7rem;
+  background-color: #ecf3fc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 80%;
+  height: 80%;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  width: 100%;
+  color: #535353;
+}

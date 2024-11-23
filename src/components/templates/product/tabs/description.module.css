@@ -1,0 +1,13 @@
+.description{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.35rem;
+
+}

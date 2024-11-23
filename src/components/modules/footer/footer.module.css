@@ -1,0 +1,103 @@
+.footerContainer {
+  padding: 4rem 2.5rem 0;
+  border-top: 1.2px solid #55555535;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.firstRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 12rem;
+  max-height: 6rem;
+}
+
+.backToTopBtn {
+  border: 1px solid #999;
+  font-weight: 400;
+  color: #a1a3a8;
+  padding: 0.7rem 2.5rem;
+  border-radius: 1rem;
+}
+
+.secondRow {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.titleBox{
+  font-size: 1.4rem ;
+}
+
+.thirdRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10rem;
+}
+
+.aboutStoreH5 {
+  font-weight: 600;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.aboutStoreP {
+  text-align: justify;
+  font-size: 1.2rem;
+  color: #81858bb5;
+  margin-top: 1rem;
+  line-height: 2.3rem;
+}
+
+.footerImages {
+  display: flex;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.image {
+  border: 1px solid;
+  max-width: 10rem;
+  max-height: 10rem;
+  border: 2px solid #a1a3a82e;
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+}
+
+.fourthRow {
+  border-top: 1.2px solid #55555535;
+  padding: 1.5rem 0;
+}
+
+.copyRight {
+  font-size: 1.2rem;
+  color: #81858b;
+}
+
+
+@media (max-width: 768px) {
+  .backToTopBtn{
+    font-size: 1.3rem;
+  }
+
+  .secondRow,
+  .thirdRow {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 350px) {
+  .firstRow{
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
