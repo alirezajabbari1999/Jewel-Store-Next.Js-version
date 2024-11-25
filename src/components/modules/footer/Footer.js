@@ -1,9 +1,9 @@
 import styles from "./footer.module.css";
 import { IoIosArrowUp } from "react-icons/io";
 import logo from "@/public/images/logo.png";
-import etemadImg from "@/public/Images/enamad.png";
-import samandehi from "@/public/Images/samandehi.png";
-import etehadieh from "@/public/Images/1e5dab5a.png";
+// import etemadImg from "@/public/Images/enamad.png";
+// import samandehi from "@/public/Images/samandehi.png";
+// import etehadieh from "@/public/Images/1e5dab5a.png";
 import Image from "next/image";
 import { Container } from "react-bootstrap";
 
@@ -46,11 +46,11 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className={styles.footerImages}>
+          {/* <div className={styles.footerImages}>
             <Image src={etemadImg} alt="footer images" className={styles.image}/>
             <Image src={samandehi} alt="footer images" className={styles.image}/>
             <Image src={etehadieh} alt="footer images" className={styles.image}/>
-          </div>
+          </div> */}
         </div>
 
         <div className={styles.fourthRow}>
