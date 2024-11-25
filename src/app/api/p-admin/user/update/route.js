@@ -1,6 +1,6 @@
 import connectToDB from "@/config/db";
 import UserModel from "@/models/User";
-import { validateEmail , validatePhone } from "@/src/utils/auth";
+import { validateEmail , validatePhone } from "@/utils/auth";
 
 export async function PUT(req) {
   try {

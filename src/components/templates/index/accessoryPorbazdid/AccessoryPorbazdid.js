@@ -7,7 +7,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { PiSealPercent } from "react-icons/pi";
 import AccessoryPorbazdidPart from "./AccessoryPorbazdidPart";
 import Image from "next/image";
-import img from "@/public/images/handart1.png";
 
 export default function AccessoryPorbazdid({ allProducts }) {
   const [products, setProducts] = useState(allProducts.slice(0, 9));

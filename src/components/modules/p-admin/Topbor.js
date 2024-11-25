@@ -25,7 +25,7 @@ const Topbar = () => {
 
             <span>{userRole === "ADMIN" ? "ادمین" : "کاربر"}</span>
           </div>
-          <img src="/images/shahin.jpg" alt="" />
+          {/* <img src="/images/shahin.jpg" alt="" /> */}
         </div>
         <section>
           <div className={styles.searchBox}>
