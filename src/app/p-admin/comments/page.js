@@ -6,7 +6,7 @@ import connectToDB from "@/config/db";
 import CommentModel from "@/models/Comment";
 
 const page = async () => {
-  connectToDB();
+  await connectToDB();
   const comments = await CommentModel.find({})
     .sort({ _id: -1 })
     .populate("user")
