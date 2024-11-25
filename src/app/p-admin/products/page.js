@@ -8,7 +8,7 @@ import AddProduct from "@/src/components/templates/p-admin/products/AddProduct";
 
 const page = async () => {
   await connectToDB();
-  const products = await ProductModel.find({}).sort({ _id: -1 });
+  const products = await ProductModel.find({}).limit(50).sort({ _id: -1 });
 
   return (
     <AdminPanelLayout>
