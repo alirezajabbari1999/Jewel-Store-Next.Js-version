@@ -3,7 +3,7 @@ import connectToDB from "@/config/db";
 
 export async function POST(req) {
   try {
-    connectToDB();
+    await connectToDB();
     const { title, subMenuIds } = await req.json();
 
     if (!title) {

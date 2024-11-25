@@ -10,7 +10,7 @@ export default async function page() {
   // user = ${userId}
   // وجود داره رو گرفتیم و تو یه ثابت ریختیم و دادیمش
   // به کامپوننت دیتا تیبل
-  connectToDB();
+  await connectToDB();
   const user = await authUser();
   const comments = await CommentModel.find({ user: user._id }, "-__v").populate(
     "productID",

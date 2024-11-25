@@ -11,7 +11,7 @@ import UserModel from "@/models/User";
 // استفاده کنم
 export async function POST(req) {
   try {
-    connectToDB();
+    await connectToDB();
     const { userId } = await req.json();
 
     await UserModel.findOneAndDelete({ _id: userId });

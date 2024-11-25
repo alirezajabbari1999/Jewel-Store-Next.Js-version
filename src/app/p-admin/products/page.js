@@ -7,7 +7,7 @@ import ProductModel from "@/models/Product";
 import AddProduct from "@/src/components/templates/p-admin/products/AddProduct";
 
 const page = async () => {
-  connectToDB();
+  await connectToDB();
   const products = await ProductModel.find({}).sort({ _id: -1 });
 
   return (

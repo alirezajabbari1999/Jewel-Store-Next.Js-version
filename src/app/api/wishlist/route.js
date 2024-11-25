@@ -2,7 +2,7 @@ import connectToDB from "@/config/db";
 import wishlistModel from "@/models/Wishlist";
 
 export async function POST(req) {
-  connectToDB();
+  await connectToDB();
   try {
     const { user, product } = await req.json();
 

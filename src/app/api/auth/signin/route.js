@@ -9,7 +9,7 @@ import {
 
 export async function POST(req) {
   try {
-    connectToDB();
+    await connectToDB();
     const { identifier, password } = await req.json();
 
     if (!identifier.trim() || !password.trim()) {

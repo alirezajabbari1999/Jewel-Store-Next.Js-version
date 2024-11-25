@@ -4,7 +4,7 @@ import Table from "@/src/components/templates/p-admin/tickets/Table";
 import connectToDB from "@/config/db";
 
 export default async function page() {
-  connectToDB();
+  await connectToDB();
   const tickets = await ticketModel
     .find({ isAnswer: false })
     .sort({ _id: -1 })

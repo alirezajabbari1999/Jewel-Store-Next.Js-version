@@ -6,8 +6,8 @@ import DiscountModel from "@/models/Discount";
 import AddDiscount from "@/src/components/templates/p-admin/discounts/AddDiscount";
 
 const Discounts = async () => {
-  connectToDB();
-  const discounts = await DiscountModel.find({}).sort({ _id: -1 }).lean();
+  await connectToDB();
+  const discounts = await DiscountModel.find({}).sort({ _id: -1 }).limit(50).lean();
 
   return (
     <Layout>

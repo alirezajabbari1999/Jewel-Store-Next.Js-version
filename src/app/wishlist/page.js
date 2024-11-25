@@ -1,62 +1,3 @@
-// import styles from "@/src/styles/wishlist.module.css";
-// import Footer from "@/src/components/modules/footer/Footer";
-// import Navbar from "@/src/components/modules/navbar/Navbar";
-// import Topbar from "@/src/components/modules/topbar/Topbar";
-// import BreadCrumb from "@/src/components/modules/breadCrumb/BreadCrumb";
-// import { Container, Row, Col } from "react-bootstrap";
-// import connectToDB from "@/config/db";
-// import { cookies } from "next/headers";
-// import { verifyToken } from "@/utils/auth";
-// import userModel from "@/models/User";
-// import WishlistModel from "@/models/Wishlist";
-// import Product from "@/src/components/modules/product/Product";
-
-// export default async function page() {
-//   connectToDB();
-//   let wishes = [];
-
-//   const token = cookies().get("token")?.value;
-//   if (token) {
-//     const isValidToken = verifyToken(token);
-
-//     if (isValidToken) {
-//       const user = await userModel.findOne({ email: isValidToken.email });
-//       wishes = await WishlistModel.find({ user: user._id })
-//         .populate("product", "name price score")
-//         .lean();
-//     }
-//   }
-
-//   return (
-//     <>
-//       <Topbar />
-//       <Navbar />
-
-//       <Container>
-//         <div className={styles.wishlist}>
-//           <BreadCrumb route={"علاقمندی ها"} />
-//           <p className={styles.title}>محصولات مورد علاقه شما</p>
-
-//           <section>
-//             <Row>
-//               {wishes.length > 0 &&
-//                 wishes.map((wish) => (
-//                   <Col key={wish._id} lg={3} md={4} sm={6} xs={12}>
-//                     <Product {...wish.product} />
-//                   </Col>
-//                 ))}
-//             </Row>
-//           </section>
-
-//           <div className={styles.wishListProducts}></div>
-//         </div>
-//       </Container>
-
-//       <Footer />
-//     </>
-//   );
-// }
-
 import styles from "@/src/styles/wishlist.module.css";
 import Footer from "@/src/components/modules/footer/Footer";
 import Navbar from "@/src/components/modules/navbar/Navbar";
@@ -74,7 +15,7 @@ import MiniBottomNavbar from "@/src/components/modules/miniBotomNavbar/MiniBotto
 import Link from "next/link";
 
 export default async function page() {
-  connectToDB();
+  await connectToDB();
   let wishes = [];
   let isLoggedIn = false;
 

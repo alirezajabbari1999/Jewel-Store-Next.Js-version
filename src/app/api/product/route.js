@@ -5,7 +5,7 @@ import path from "path";
 
 export async function POST(req) {
   try {
-    connectToDB();
+    await connectToDB();
     const formData = await req.formData();
 
     const name = formData.get("name");

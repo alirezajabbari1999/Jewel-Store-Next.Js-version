@@ -10,7 +10,7 @@ import SaleChart from "@/src/components/templates/p-admin/index/SaleChart";
 import GrowthChart from "@/src/components/templates/p-admin/index/GrowthChart";
 
 export default async function page() {
-  connectToDB();
+  await connectToDB();
   const tickets = await TicketModel.find({}).lean();
   const users = await UserModel.find({}).lean();
   const products = await ProductModel.find({}).lean();

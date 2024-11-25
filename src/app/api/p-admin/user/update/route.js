@@ -4,7 +4,7 @@ import { validateEmail , validatePhone } from "@/utils/auth";
 
 export async function PUT(req) {
   try {
-    connectToDB();
+    await connectToDB();
     const { userId, name, email, phone } = await req.json();
 
     // چک کردن اینکه شناسه کاربر وجود داشته باشد

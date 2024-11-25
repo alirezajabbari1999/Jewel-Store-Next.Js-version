@@ -4,7 +4,7 @@ import { authUser } from "@/utils/serverHelpers";
 
 export async function POST(req) {
   try {
-    connectToDB();
+    await connectToDB();
     const user = await authUser();
     const { title, body, priority, department, subDepartment } =
       await req.json();
@@ -60,7 +60,7 @@ export async function POST(req) {
 
 export async function GET() {
   try {
-    connectToDB();
+    await connectToDB();
     const allTickets = await ticketModel.find({});
     return Response.json({ allTickets }, { status: 200 });
   } catch (err) {

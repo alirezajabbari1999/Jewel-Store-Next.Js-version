@@ -3,7 +3,7 @@ import userModel from "@/models/User";
 
 export async function PUT(req) {
   try {
-    connectToDB();
+    await connectToDB();
     const { userId } = await req.json();
 
     const user = await userModel.findOne({ _id: userId });

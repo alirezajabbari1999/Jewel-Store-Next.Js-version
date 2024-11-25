@@ -3,7 +3,7 @@ import commentModel from "@/models/Comment";
 
 export async function PUT(req) {
   try {
-    connectToDB();
+    await connectToDB();
     const { commentId } = await req.json();
 
     const acceptComment = await commentModel.findOneAndUpdate(

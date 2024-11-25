@@ -3,7 +3,7 @@ import departmentModel from "@/models/Department";
 
 export async function POST(req) {
   try {
-    connectToDB();
+    await connectToDB();
 
     const { title } = await req.json();
     if (!title.trim()) {
@@ -25,7 +25,7 @@ export async function POST(req) {
 
 export async function GET() {
   try {
-    connectToDB();
+    await connectToDB();
     const allDepartments = await departmentModel.find({});
     return Response.json(allDepartments, { status: 200 });
   } catch (err) {

@@ -7,7 +7,7 @@ import { cookies } from "next/headers";
 
 export async function POST(req) {
   try {
-    connectToDB();
+    await connectToDB();
     const { username, body, email, score, productID} = await req.json();
 
     if (
@@ -65,7 +65,7 @@ export async function POST(req) {
 
 export async function GET() {
   try {
-    connectToDB();
+    await connectToDB();
     const comments = await commentModel.find({});
     return Response.json({ comments }, { status: 200 });
   } catch (err) {

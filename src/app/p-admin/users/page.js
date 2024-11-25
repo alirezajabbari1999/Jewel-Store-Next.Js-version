@@ -4,7 +4,7 @@ import Table from "@/src/components/templates/p-admin/users/Table";
 import connectToDB from "@/config/db";
 
 export default async function page() {
-  connectToDB();
+  await connectToDB();
   const users = await userModel.find({}).lean();
 
   return (

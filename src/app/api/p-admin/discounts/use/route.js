@@ -3,7 +3,7 @@ import discountModel from "@/models/Discount";
 
 export async function PUT(req) {
   try {
-    connectToDB();
+    await connectToDB();
     const { code } = await req.json();
 
     const discount = await discountModel.findOne({ code });

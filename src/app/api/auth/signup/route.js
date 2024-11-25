@@ -10,7 +10,7 @@ import {
 
 export async function POST(req) {
   try {
-    connectToDB();
+    await connectToDB();
     const { username, email, phone, password } = await req.json();
 
     if (

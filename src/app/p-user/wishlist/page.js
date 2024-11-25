@@ -6,7 +6,7 @@ import { authUser } from "@/utils/serverHelpers";
 import WishlistModel from "@/models/Wishlist";
 
 const page = async () => {
-  connectToDB();
+  await connectToDB();
   const user = await authUser();
   const wishlist = await WishlistModel.find({ user: user._id }).populate(
     "product"

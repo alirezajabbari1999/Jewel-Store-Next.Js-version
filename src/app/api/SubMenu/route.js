@@ -4,7 +4,7 @@ import CategoryModel from "@/models/Category";
 
 export async function POST(req) {
   try {
-    connectToDB();
+    await connectToDB();
     const { name, categoryId } = await req.json();
 
     if (!name) {

@@ -3,7 +3,7 @@ import BanUsersModel from "@/models/BanUsers";
 
 export async function POST(req) {
   try {
-    connectToDB();
+    await connectToDB();
     const { email, phone } = await req.json();
 
     await BanUsersModel.create({ email, phone });
@@ -21,7 +21,7 @@ export async function POST(req) {
 
 export async function GET() {
   try {
-    connectToDB();
+    await connectToDB();
     const BanUsers = await BanUsersModel.find({});
     return Response.json(
       { BanUsers },

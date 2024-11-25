@@ -3,7 +3,7 @@ import discountModel from "@/models/Discount";
 
 export async function POST(req) {
   try {
-    connectToDB();
+    await connectToDB();
     const { code, percent, maxUse } = await req.json();
 
     await discountModel.create({ code, percent, maxUse });

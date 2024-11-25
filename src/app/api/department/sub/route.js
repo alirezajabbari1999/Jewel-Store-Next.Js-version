@@ -3,7 +3,7 @@ import subDepartmentModel from "@/models/SubDepartment";
 
 export async function POST(req) {
   try {
-    connectToDB();
+    await connectToDB();
 
     const { title, department } = await req.json();
     if (!title.trim()) {
@@ -31,7 +31,7 @@ export async function POST(req) {
 
 export async function GET() {
   try {
-    connectToDB();
+    await connectToDB();
     const allSubDepartments = await subDepartmentModel.find({});
     return Response.json(allSubDepartments, { status: 200 });
   } catch (err) {
