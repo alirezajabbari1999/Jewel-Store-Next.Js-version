@@ -9,6 +9,7 @@ export default function Details({ product }) {
   const [user, setUser] = useState({});
   const [isInWishlist, setIsInWishlist] = useState(false);
 
+
   useEffect(() => {
     const authUser = async () => {
       const res = await fetch("/api/auth/me");

@@ -124,8 +124,10 @@ export default function Topbar() {
             </div>
 
             <div className={styles.userCartbox}>
-              <IoCartOutline className={styles.cartIcon} />
-              <span className={styles.cartCount}>0</span>
+              <Link href="/checkout" className={styles.checkoutLink}>
+                <IoCartOutline className={styles.cartIcon} />
+                <span className={styles.cartCount}>0</span>
+              </Link>
             </div>
           </div>
         </div>

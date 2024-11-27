@@ -5,7 +5,7 @@ import { IoIosHeartEmpty } from "react-icons/io";
 import { FaStar } from "react-icons/fa";
 import Image from "next/image";
 
-export default function Product({_id, name, price, img }) {
+export default function Product({ _id, name, price, img }) {
   return (
     <div className={styles.handArtSliderPart}>
       <div className={styles.handArtLink}>
