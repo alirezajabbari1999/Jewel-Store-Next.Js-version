@@ -1,20 +1,32 @@
+"use client";
+import { useState } from "react";
 import styles from "./miniTopNavbar.module.css";
 import { Container } from "react-bootstrap";
 import Link from "next/link";
 import { CgMenuRight } from "react-icons/cg";
 import { CiSearch } from "react-icons/ci";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { FaRegUser } from "react-icons/fa";
 import logo from "@/public/images/logo.png";
 import Image from "next/image";
+import Sidebar from "@/src/components/modules/sidebar/Sidebar";
 
 export default function MiniTopNavbar() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const openSidebar = () => {
+    setIsSidebarOpen(true);
+  };
+
+  const closeSidebar = () => {
+    setIsSidebarOpen(false);
+  };
+
   return (
     <Container className="container-custom">
       <div className={styles.miniNavbar}>
         {/* ردیف اول نوبار */}
         <div className={styles.miniNavbarFirstRow}>
-          <div className={styles.sidebarIconBox}>
+          <div className={styles.sidebarIconBox} onClick={openSidebar}>
             <span className={styles.sidebarIcon}>
               <CgMenuRight className={styles.icon} />
             </span>
@@ -53,6 +65,12 @@ export default function MiniTopNavbar() {
           </div>
         </div>
       </div>
+
+      <Sidebar isOpen={isSidebarOpen} closeSidebar={closeSidebar} />
+      <div
+        className={`overly ${isSidebarOpen ? "active" : ""}`}
+        onClick={closeSidebar}
+      ></div>
     </Container>
   );
 }

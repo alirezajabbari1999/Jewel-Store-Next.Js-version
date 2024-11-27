@@ -1,0 +1,73 @@
+.sidebar {
+  background-color: var(--white);
+  width: 30rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -35rem;
+  z-index: 99999999;
+  transition: all 0.3s ease;
+  padding: 1.8rem 1rem 1rem;
+  overflow: auto;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.menu {
+  padding-top: 20px;
+}
+
+.categoryList {
+  list-style: none;
+  padding: 0;
+}
+
+.categoryItem {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.categoryTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chevronIcon {
+  transition: transform 0.3s ease;
+}
+
+.chevronIcon.rotate {
+  transform: rotate(90deg); /* این کد باعث می‌شود آیکون فلش چرخش داشته باشد */
+}
+
+.subMenuList {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.subMenuItem {
+  text-decoration: none;
+  color: #3333339e;
+  padding-right: 2rem;
+  font-size: 1.4rem;
+}
+
+.subMenuItem:hover {
+  color: #007bff;
+}
+
+.closeBtnBox {
+  text-align: left;
+}
+
+.closeIcon {
+  font-size: 3rem;
+  cursor: pointer;
+}
