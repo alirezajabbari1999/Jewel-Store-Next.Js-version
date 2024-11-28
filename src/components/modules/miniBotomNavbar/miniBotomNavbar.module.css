@@ -57,8 +57,8 @@
 
 .shoppingCartCount {
   position: absolute;
-  top: .5rem;
-  right: .5rem;
+  top: 0.5rem;
+  right: 0.5rem;
   background-color: #00bdf6;
   color: var(--white);
   width: 2.2rem;
@@ -73,5 +73,20 @@
 @media screen and (max-width: 991px) {
   .MiniBottomNavbar {
     display: block !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    display: none;
+  }
+
+  .shoppingCartIcon {
+    font-size: 3rem;
+  }
+
+  .shoppingCartCount {
+    top: 0;
+    right: 0;
   }
 }

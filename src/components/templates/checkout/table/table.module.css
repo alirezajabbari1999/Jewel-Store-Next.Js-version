@@ -141,3 +141,21 @@
   width: 100%;
   margin-top: 2.5rem;
 }
+
+
+@media (max-width: 991px) {
+  .productBox{
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 387px) {
+  .addressBox,
+  .discountsBox{
+    flex-direction: column;
+  }
+
+  .discountsBox{
+    margin-top: 5rem;
+  }
+}

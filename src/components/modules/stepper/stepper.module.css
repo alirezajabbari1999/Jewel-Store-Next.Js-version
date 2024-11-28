@@ -6,15 +6,14 @@
   justify-content: center;
   flex-direction: row-reverse;
   gap: 3rem;
-  color: #EF394E;
+  color: #ef394e;
   border-bottom: 1.2px solid #55555535;
 }
 
 .activeStep {
-  color: #EF394E;
+  color: #ef394e;
   opacity: 1 !important;
   font-size: 2rem;
-
 }
 
 .text {
@@ -29,4 +28,20 @@
 .stepper svg {
   font-size: 1.2rem;
   opacity: 0.7;
+}
+
+@media (max-width: 400px) {
+  .activeStep {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .stepper {
+    gap: 1.5rem;
+  }
 }

@@ -8,13 +8,6 @@ export async function PUT(req) {
 
     const discount = await discountModel.findOne({ code });
 
-    // این کد میره کد تخفیفی که مقدار کد اون برابر با
-    // کدی که کاربر وارد کرده هست رو میگیره و مقدار
-    // uses
-    // اون رو یکی افزایش دادیم
-    // inc = increase افزایش
-    await discountModel.findOneAndUpdate({ code }, { $inc: { uses: 1 } });
-
     if (!discount) {
       return Response.json(
         { message: "Discount code not found" },
@@ -26,7 +19,16 @@ export async function PUT(req) {
         { status: 422 }
       );
     } else {
-      return Response.json({ discount }, { status: 200 });
+      // این کد میره کد تخفیفی که مقدار کد اون برابر با
+      // کدی که کاربر وارد کرده هست رو میگیره و مقدار
+      // uses
+      // اون رو یکی افزایش دادیم
+      // inc = increase افزایش
+      const updatedDiscount = await discountModel.findOneAndUpdate(
+        { code },
+        { $inc: { uses: 1 } }
+      );
+      return Response.json({ updatedDiscount }, { status: 200 });
     }
   } catch (err) {
     return Response.json({ error: err }, { status: 500 });
