@@ -7,6 +7,7 @@ import Link from "next/link";
 import { FaStore } from "react-icons/fa";
 import { PiSmileySad } from "react-icons/pi";
 import swal from "sweetalert";
+import Stepper from "@/src/components/modules/stepper/Stepper";
 
 export default function Table() {
   const [cart, setCart] = useState([]);
@@ -122,6 +123,8 @@ export default function Table() {
         </div>
       ) : (
         <div className={styles.table}>
+          <Stepper step="cart" />
+
           <Row>
             <Col lg={8} xs={12}>
               <div className={styles.productBox}>
