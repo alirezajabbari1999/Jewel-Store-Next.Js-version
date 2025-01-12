@@ -23,7 +23,6 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 10px;
-  width: 390px;
   margin: 0 auto;
   justify-content: space-between;
   align-items: flex-end;
@@ -53,9 +52,11 @@
 .active_tab::before {
   width: 100% !important;
 }
+
 .active_tab {
   color: black !important;
 }
+
 .tabs ul li button {
   transition: all 0.3s ease-in-out;
   color: gray;
@@ -73,6 +74,9 @@
   transition: all 0.2s ease-in-out;
   font-family: shabnam;
 }
+
+
+/* /////////////////////////////////// */
 
 .contents {
   margin-top: 30px;

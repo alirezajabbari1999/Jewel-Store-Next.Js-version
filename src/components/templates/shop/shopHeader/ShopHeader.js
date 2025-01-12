@@ -34,6 +34,7 @@ export default function ShopHeader({ allProducts }) {
                 >
                   پیشفرض
                 </li>
+
                 <li
                   className={`${styles.shopMenuItem} ${
                     menuItemActive == 1 ? styles.active : ""
@@ -42,6 +43,7 @@ export default function ShopHeader({ allProducts }) {
                 >
                   محبوب ترین
                 </li>
+
                 <li
                   className={`${styles.shopMenuItem} ${
                     menuItemActive == 2 ? styles.active : ""
@@ -50,6 +52,7 @@ export default function ShopHeader({ allProducts }) {
                 >
                   جدیدترین
                 </li>
+
                 <li
                   className={`${styles.shopMenuItem} ${
                     menuItemActive == 3 ? styles.active : ""
@@ -58,6 +61,7 @@ export default function ShopHeader({ allProducts }) {
                 >
                   ارزانترین
                 </li>
+
                 <li
                   className={`${styles.shopMenuItem} ${
                     menuItemActive == 4 ? styles.active : ""

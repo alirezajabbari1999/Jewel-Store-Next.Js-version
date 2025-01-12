@@ -72,7 +72,6 @@
 }
 
 .panelBox {
-  /* flex-grow: 1; */
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -93,6 +92,7 @@
 .shoppingCardIcon {
   font-size: 2.5rem;
   cursor: pointer;
+  color: #666666;
 
 }
 

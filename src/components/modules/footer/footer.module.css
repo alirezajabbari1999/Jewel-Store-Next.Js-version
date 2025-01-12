@@ -84,6 +84,12 @@
 }
 
 
+@media (max-width: 990px) {
+  .footerContainer{
+    padding-bottom: 10rem;
+  }
+}
+
 @media (max-width: 768px) {
   .backToTopBtn{
     font-size: 1.3rem;

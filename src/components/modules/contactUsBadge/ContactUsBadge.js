@@ -21,7 +21,6 @@ export default function ContactUsBadge() {
   return (
     <div className={styles.contactBadgeContainer}>
       <div
-        // className={`${styles["contactCircle"]} ${overlyActive ? "active" : ""}`}
         className={styles.contactCircle}
         onClick={() => overlyHandler()}
       >

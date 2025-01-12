@@ -8,6 +8,8 @@ import logoGif from "@/public/images/logo.gif";
 import Image from "next/image";
 import LoginForm from "@/src/components/templates/register/loginForm/LoginForm";
 import RegisterForm from "@/src/components/templates/register/registerForm/RegisterForm";
+import MiniTopNavbar from "@/src/components/modules/miniTopNavbar/MiniTopNavbar";
+import MiniBottomNavbar from "@/src/components/modules/miniBotomNavbar/MiniBottomNavbar";
 
 export default function page() {
   const [formType, setFormType] = useState("login");
@@ -24,6 +26,7 @@ export default function page() {
     <div>
       <Topbar />
       <Navbar />
+      <MiniTopNavbar />
 
       <div className={styles.registerForm}>
         <div className={styles.formType}>
@@ -51,6 +54,7 @@ export default function page() {
       </div>
 
       <Footer />
+      <MiniBottomNavbar />
     </div>
   );
 }

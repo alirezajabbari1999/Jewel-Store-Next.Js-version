@@ -94,8 +94,8 @@ export default function CommentForm({ productID }) {
       const data = await res.json();
 
       if (res.status === 200) {
-        setUsername(data.username);
-        setEmail(data.email);
+        setUsername(data?.username);
+        setEmail(data?.email);
       }
     };
     userInfo();

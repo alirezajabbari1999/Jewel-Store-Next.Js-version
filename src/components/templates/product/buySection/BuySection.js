@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import styles from "./buySection..module.css";
+import styles from "./buySection.module.css";
 import { BiStoreAlt } from "react-icons/bi";
 import { PiSquareHalfBottom } from "react-icons/pi";
 import swal from "sweetalert";
@@ -19,16 +19,10 @@ export default function BuySection({ product }) {
   };
 
   const addToCart = () => {
-    // مشخصات سبد خرید کاربر رو در صورت وجود از لوکال استوریج گرفتم اام اگه کاربر
-    // دفعه اولش باشه یعنی هنوز چیزی توی لوکال استوریج ذخیره نداره بنابراین شرط گذاشتم
-    // که اگه چیزی نبود آرایه خالی برگردونه
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-    // بررسی می‌کنیم آیا محصول از قبل در سبد وجود دارد یا نه
     const isProductIn = cart.findIndex((item) => item.id === product._id);
 
     if (isProductIn !== -1) {
-      // اگر محصول وجود داشته باشد، تعداد آن را به‌روزرسانی می‌کنیم
       cart[isProductIn].count = count;
       swal({
         title: "تعداد محصول مورد نظر با موفقیت در سبد خرید به‌روزرسانی شد",
@@ -36,7 +30,6 @@ export default function BuySection({ product }) {
         buttons: "متوجه شدم",
       });
     } else {
-      // اگر محصول وجود نداشته باشد، به سبد اضافه می‌کنیم
       const cartItem = {
         id: product._id,
         name: product.name,
@@ -52,8 +45,10 @@ export default function BuySection({ product }) {
       });
     }
 
-    // به‌روزرسانی localStorage
     localStorage.setItem("cart", JSON.stringify(cart));
+
+    // ارسال رویداد برای همگام‌سازی
+    window.dispatchEvent(new Event("storage"));
   };
 
   return (

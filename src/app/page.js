@@ -16,7 +16,6 @@ import connectToDB from "@/config/db";
 import productModel from "@/models/Product";
 import MiniTopNavbar from "../components/modules/miniTopNavbar/MiniTopNavbar";
 import MiniBottomNavbar from "../components/modules/miniBotomNavbar/MiniBottomNavbar";
-// import Sidebar from "../components/modules/sidebar/Sidebar";
 
 export default async function Home() {
   await connectToDB();
